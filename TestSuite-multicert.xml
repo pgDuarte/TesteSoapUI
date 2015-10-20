@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="617f3103-849b-46d0-9604-f1a0b5164c9b" name="TestSuite multicert" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="36fa53de-372a-4626-937d-5289ae5f7e54" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getName" searchProperties="true"><con:settings/><con:testStep type="request" name="deleteUser" id="9b680160-ef7f-4161-b60c-1722377a032b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UserDetailsServiceServiceSoapBinding</con:interface><con:operation>deleteUser</con:operation><con:request name="deleteUser" id="47668536-13e0-4657-8c64-7ceca40b2dcb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/webservice-cfx-spring/UserDetails</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservices.spring/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:deleteUser>\r
+         <nif>029338</nif>\r
+      </ser:deleteUser>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7a0a6cc0-b224-44a1-a2bb-b74ed041283a"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="addUser" id="c3331f6d-abbb-43f5-aa9a-d7a520d17f27"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UserDetailsServiceServiceSoapBinding</con:interface><con:operation>addUser</con:operation><con:request name="addUser" id="a0467f55-6961-4abe-bee7-649c5e87469e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/webservice-cfx-spring/UserDetails</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservices.spring/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:addUser>\r
+         <nif>213456789</nif>\r
+         <name>Pedro Martins</name>\r
+         <address>Gaia</address>\r
+         <phone>96000000</phone>\r
+      </ser:addUser>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b5a117e7-df87-4297-900e-1f3346242958"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetDetails" id="7f93d2f5-7f92-4442-8864-7a525333f7ca"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UserDetailsServiceServiceSoapBinding</con:interface><con:operation>geDetails</con:operation><con:request name="GetDetails" id="dc736362-6e8a-4035-b25e-ecbab19e42a1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/webservice-cfx-spring/UserDetails</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservices.spring/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:geDetails>
+      <nif>123456789</nif>
+      </ser:geDetails>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0fdae412-da4c-453b-bba3-2c5bf1e90382"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetName" id="2590a709-9872-4fa9-9df4-fb41c4347b0d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UserDetailsServiceServiceSoapBinding</con:interface><con:operation>getname</con:operation><con:request name="GetName" id="669dac6b-95d3-4983-82c9-59e94c0fc4cd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/webservice-cfx-spring/UserDetails</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservices.spring/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getname>
+      <nif>987654321</nif>
+      </ser:getname>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="30f577a1-2f06-4311-8cbb-3f3fa587abad"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getUsers" id="943d1caf-b348-4b71-a0cb-dec11aa21921"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UserDetailsServiceServiceSoapBinding</con:interface><con:operation>getUsers</con:operation><con:request name="getUsers" id="1439ea07-c4a9-4d26-963e-9195fa49670c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/webservice-cfx-spring/UserDetails</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservices.spring/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getUsers/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="96d3dc70-e210-47b0-abf8-7ad870e3c7d3"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="getDetailsUsers" id="8c1f383e-de1a-48b6-967b-7f26596142c7"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UserDetailsServiceServiceSoapBinding</con:interface><con:operation>getDetailsUsers</con:operation><con:request name="getDetailsUsers" id="c58bbe89-c4a1-4f67-a49b-3ee3b6d66aaf"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/webservice-cfx-spring/UserDetails</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.webservices.spring/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getDetailsUsers>
+      <name>Filipe</name>
+      </ser:getDetailsUsers>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="60783d3d-74ad-4cf3-8731-961958d0c40f"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite>
